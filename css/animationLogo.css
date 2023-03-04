@@ -1,3 +1,38 @@
-.nikeImage {
-    width: 200px;
+/* The Animation Code */ 
+@keyframes githublogo {
+    0% {filter: hue-rotate(0deg);}
+    100% {filter: hue-rotate(360deg);}
+}
+
+/* The element to apply the animation to */
+.fa-github {
+    position: relative;
+    color: white;
+    font-size: 150px;
+    background-color: black;
+    text-shadow: 0 0 50px #FF5E00,
+        0 0 100px #FFF01F,
+        0 0 150px #7FFF00,
+        0 0 200px #0FF0FC,
+        0 0 250px #BC13FE,
+        0 0 300px #FF1493;
+    animation-name: githublogo;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* html css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: black;
 }
